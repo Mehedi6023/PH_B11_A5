@@ -4,8 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PH_B11_A5</title>
+    <!-- daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    
+<body class="bg-gray-700 h-screen flex flex-col items-center">
+    <!-- header section -->
+    <header class="container bg-white rounded-2xl px-10 py-2 w-full mt-5 flex justify-between items-center">
+        <!-- left -->
+        <div class="header-left flex items-center gap-4">
+            <div class="logo-wrapper">
+                <img src="./assets/logo.png" alt="logo">
+            </div>
+            <h1 class="text-[2.3rem]">Dev<span class="font-bold">Board</span></h1>
+        </div>
+        <!-- right -->
+        <div class="header-right flex items-center gap-10">
+            <div class="flex items-center gap-4 bg-[#F4F7FF] rounded-full px-4 py-2">
+                <img src="assets/checkbox.png" alt="checkbox">
+                <h1 class="text-[1.7rem] font-bold">23</h1>
+            </div>
+            <div>
+                <div id="theme" class="p-4 rounded-full bg-[#F4F7FF]">
+                    <img src="assets/theme-btn.png" alt="theme">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- main section -->
+     <main>
+        <div class="parent-grid-wrapper">
+            <!-- left -->
+            <div class="grid-left">
+
+            </div>
+            <!-- right -->
+            <div class="grid-right">
+
+            </div>
+        </div>
+     </main>
+    <script src="./theme.js"></script>
 </body>
+
 </html>
