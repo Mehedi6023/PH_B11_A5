@@ -1,0 +1,9 @@
+let dateEl = document.getElementById('date');
+let fullDate = new Date();
+let day = fullDate.getDay();
+let month = fullDate.getMonth();
+let date = fullDate.getDate();
+let year = fullDate.getFullYear();
+let days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+let months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+dateEl.innerHTML = `${days[day]}, </br> <b> ${months[month]} ${date} ${year} </b>`;
