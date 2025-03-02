@@ -12,7 +12,7 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body class="bg-gray-700 flex flex-col items-center min-h-[100vh]">
+  <body class="bg-gray-200 flex flex-col items-center min-h-[100vh]">
     <header
       class="bg-white rounded-2xl px-10 py-2 my-4 flex justify-between items-center w-[98%] sm:w-[95%] lg:w-[90%]"
     >
@@ -25,11 +25,76 @@
       </div>
       <!-- right -->
       <div class="right">
-        <div class="btn-container">
+        <div class="btn-container cursor-pointer">
           <button id="back-desk" class="btn bg-[#3752FD] rounded-lg text-white text-[18px]">Back to Desk</button>
         </div>
       </div>
     </header>
+    <main class="w-[98%] sm:w-[95%] lg:w-[90%]">
+      <h3 class="text-4xl font-bold text-center">Blogs</h3>
+      <div class="question-ans">
+
+
+        <div class="bg-white p-5 rounded-lg my-5">
+          <h2 class="text-2xl font-semibold">
+            Question-1: What are the different ways to select an element in the DOM?
+          </h2>
+          <hr class="border border-gray-300 my-2">
+          <p>
+            There are many ways to select an element it the DOM!
+            Some of the common ways are given below:
+            1. getElementById("myElementId")
+            2. getElementsByClassName("myClassName")
+            3. getElementsByTagName("div")
+            4. querySelector(".myClassName")
+            5. querySelectorAll(".myClassName") etc.
+          </p>
+        </div>
+
+        <div class="bg-white p-5 rounded-lg my-5">
+          <h2 class="text-2xl font-semibold">
+            Question-2: What is the difference between innerHTML, innerText, and textContent ?
+          </h2>
+          <hr class="border border-gray-300 my-2">
+          <p>
+            1. innerHTML: We can get and set the html content of an element including html tags. It can render html tags.
+            2. innerText: It can not render html tags. We can use it to get or set plain text content of an element. It ignores hidden elements.
+            3. textContent: Can not render html tags. It can get or set text content of an element including hidden text.
+          </p>
+        </div>
+        <div class="bg-white p-5 rounded-lg my-5">
+          <h2 class="text-2xl font-semibold">
+            Question-3: What is event delegation in the DOM?
+          </h2>
+          <hr class="border border-gray-300 my-2">
+          <p>
+            Event delegation is a technique in JavaScript. When a single event listener is added to a parent to handle event for multiples child elements even if they are added dynamically, is called Event delegation.
+          </p>
+        </div>
+        <div class="bg-white p-5 rounded-lg my-5">
+          <h2 class="text-2xl font-semibold">
+            Question-4: What is event bubbling in the DOM?
+          </h2>
+          <hr class="border border-gray-300 my-2">
+          <p>
+            Event bubbling is a technique where an event starts from a targeted element and bubbles up trough its parent elements until it reaches the root.
+          </p>
+        </div>
+        <div class="bg-white p-5 rounded-lg my-5">
+          <h2 class="text-2xl font-semibold">
+            Question-5: How do you create, add, and remove elements using JavaScript?
+          </h2>
+          <hr class="border border-gray-300 my-2">
+          <p>
+            1. Creating an Element: We can use document.createElement(tagName) to create elements.
+            2. Adding Elements to the DOM: We can use .appendChild() to add the newly created elements.
+            3. Removing Elements from the DOM: We can use .remove() to remove an element from the dom.
+          </p>
+        </div>
+
+
+      </div>
+    </main>
     <script src="./swithc2.js"></script>
   </body>
 </html>
