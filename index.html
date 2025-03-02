@@ -22,7 +22,7 @@
         <div class="header-right flex items-center gap-10">
             <div class="flex items-center gap-4 bg-[#F4F7FF] rounded-full px-4 py-2">
                 <img src="assets/checkbox.png" alt="checkbox">
-                <h1 class="text-[1.7rem] font-bold">23</h1>
+                <h1 id="task-done" class="text-[1.7rem] font-bold">23</h1>
             </div>
             <div>
                 <div id="theme" class="p-4 rounded-full bg-[#F4F7FF]">
@@ -32,17 +32,17 @@
         </div>
     </header>
     <!-- main section -->
-     <main class="bg-white rounded-2xl p-5 w-[98%] sm:w-[95%] lg:w-[90%] my-4">
+     <main class="w-[98%] sm:w-[95%] lg:w-[90%] my-4">
         <div class="parent-grid grid grid-cols-[4fr_1fr] gap-5">
             <!-- left -->
-            <div class="grid-left grid grid-cols-18 gap-5">
+            <div class="bg-white rounded-2xl p-5 grid-left grid grid-cols-18 gap-5">
                 <div class="box1 col-span-5 flex justify-center items-center gap-5 bg-[#0044ff1c] rounded-[12px] p-4">
                     <div class="checkbox-wrapper bg-white  rounded-full w-[60px] h-[60px] flex justify-center items-center">
                         <img class="w-[60%]" src="assets/checkbox.png" alt="checkbox">
                     </div>
                     <div class="flex flex-col">
                         <p>Task Assigned </p>
-                        <h1 class="font-bold text-3xl">05</h1>
+                        <h1 id="task" class="font-bold text-3xl">06</h1>
                     </div>
                 </div>
                 <div class="box2 col-span-8 flex justify-center items-center gap-5 bg-linear-to-br from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] rounded-[12px] p-7 text-white">
@@ -63,6 +63,7 @@
                         <p id="date"></p>
                     </div>
                 </div>
+                <div class="border-b-1 border-dashed border-gray-400 w-full col-span-18"></div>
 
                 <div class="task col-span-6 bg-[#0044ff1c] p-5 rounded-[12px] flex flex-col justify-between items-start">
                     <p class="bg-white py-1 px-4 rounded-[12px] inline-block ">ShopEase</p>
@@ -158,13 +159,29 @@
                 </div>
             </div>
             <!-- right -->
-            <div class="grid-right bg-blue-300">
+            <div class="grid-right bg-white rounded-2xl flex flex-col items-center">
+                <div class="p-5 flex flex-col items-center space-y-5">
+                    <div class="flex gap-6">
+                        <div class="activity-wrapper">
+                            <img src="assets/activity.png" alt="activity">
+                        </div>
+                        <h4 class="font-semibold">Activity Log</h4>
+                    </div>
+                    <button id="clear-btn" class="btn bg-[#3752FD] text-white rounded-lg ">Clear History</button>
+                </div>
+                <div class="border-b-1 border-dashed border-gray-400 w-full"></div>
+                <div id="p-container">
 
+                </div>
             </div>
         </div>
      </main>
-     <script src="disablebtn.js"></script>
+     <script src="./utilities.js"></script>
      <script src="./date.js"></script>
+     <script src="./history.js"></script>
+     <script src="./taskDone.js"></script>
+     <script src="./tasdAssigned.js"></script>
+     <script src="./disablebtn.js"></script>
     <script src="./theme.js"></script>
 </body>
 

@@ -20,7 +20,7 @@
 // });
 
 // using querySelectorAll and forEach and addEventListener
-document.querySelectorAll(".task-btn").forEach((button) => {
+taskArr.forEach((button) => {
   button.addEventListener("click", function () {
     this.disabled = true;
   });
